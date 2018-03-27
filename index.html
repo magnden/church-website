@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Church Website | Homepage</title>
+    <link rel="stylesheet" href="/css/cssreset.css">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 id="topHeading">Welcome To</h1>
+        <p id="topPar">the Family Reformation Fellowship Church Website</p>
+        <div id="nav">
+          <nav>
+            <a href="#">Home</a>
+            <a class="bordered" href="#">Beliefs</a>
+            <a class="bordered" href="#">About</a>
+            <a class="bordered" href="#">Contact</a>
+          </nav>
+        </div>
+
+      </div>
+    </header>
+    <main>
+        <div id="showcase">
+          <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="img/dusk.jpg">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/city.jpg">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/clouds.jpg">
+  </div>
+           <!--<img src="img/dusk.jpg" alt="Your Browser Does Not support this image :(">-->
+        </div>
+        <div class="container">
+        <div id="mainSection">
+          <h1>Why are we here?</h1>
+          <p>Family Reformation Fellowship is a recently rlanted church |Aug 2011| in the East Louisville area. We are different than most churches you might visit in our current culture, we strive to be biblical in all we do with the desire to live out the Gospel of Jesus Christ as a local New Covenant Church body. We hope you will come for a visit! <a href="#">Learn More</a></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <hr>
+        <p id="signIn">Member Sign In</p>
+        <p id="copyright">&copy;Family Reformation Fellowship, 2017</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex> slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
+  </body>
+</html>
